@@ -1,0 +1,115 @@
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: rgba(17, 17, 17, 1);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280;
+    margin: 0 auto;
+    pad: 40px 4%;
+}
+
+.img img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.img{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Estilo do Cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: left top;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+img{
+    margin-right: 814;
+    margin-left: 4;
+    display: flex;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 0 20px;
+}
+
+/* Estilo topo do Site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: left top;
+    justify-content: left top;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.topo-do-site p{
+    color: #fff;
+    font-size: 26px;
+    margin: 40px 0;
+}
+
+
+
+
+/* Portifolio */
+.container .row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.video-cover {
+    margin-bottom: 20px; 
+}
+
+.row {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.col-md-4 { 
+    margin-bottom: 40px;
+}
