@@ -1,0 +1,207 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #111;
+    font-family: "Varela Round", sans-serif;
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+
+body.menu-aberto {
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    background-color: grey;
+    padding: 20px 0;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 20px;
+    height: 100px;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+.celular {
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 75%;
+    height: calc(100vh - 100px);
+    background-color: #222;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    padding-top: 40px;
+}
+
+.menu-lateral.mostrarMenu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-lista li {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    margin: 20px 0;
+}
+
+.menu-lista li.mostrar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-lista li a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Playwrite HU", cursive;
+}
+
+.titulo p {
+    font-size: 20px;
+    color: rgb(243, 243, 243);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img img {
+    clip-path: circle(50%);
+    width: 300px;
+    height: 300px;
+}
+
+.endereco h3,
+.experiencia h3,
+.formacao h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: "Playwrite HU", cursive;
+}
+
+.endereco li,
+.experiencia li,
+.formacao li {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    color: rgb(185, 185, 185);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1050px) {
+    .menu ul {
+        display: none;
+    }
+
+    .celular {
+        display: block;
+    }
+
+    .menu-lateral {
+        width: 50%;
+        height: calc(100vh - 100px);
+        top: 140px;
+    }
+
+    .menu-lateral li {
+        margin-bottom: 130px;
+    }
+}

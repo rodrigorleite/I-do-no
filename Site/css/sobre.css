@@ -1,0 +1,67 @@
+*{
+    text-decoration: none;
+    justify-content: center; 
+}
+
+.menu h2{
+    margin-top: 50px;
+    font-family: "Playwrite HU", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.menu p{
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.list h2{
+    margin-top: 20px;
+    font-family: "Playwrite HU", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.list ul{
+    margin-top: 20px;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.table h2{
+    margin-top: 20px;
+    font-family: "Playwrite HU", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.form h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Playwrite HU", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.form label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form textarea{
+    margin-top: 10px;
+}
+.form button{
+    margin-top: 10px;
+}
