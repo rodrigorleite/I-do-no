@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
 .navbar{
-    background-color: blue;
+    background-color: #f5e9dc !important;
 }
