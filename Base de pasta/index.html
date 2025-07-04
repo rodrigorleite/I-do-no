@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,13 @@
 </head>
 
 <body>
+    <!-- Header -->
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand"><i class="fa-solid fa-paintbrush"></i></a>
+            <a class="navbar-brand">
+                <img src="img/Ana Artesanais.png" alt="Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,29 +42,82 @@
         </div>
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 90%;">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/Artesanato.jpg" class="d-block w-100" alt="Artesanato">
+    <!-- Img -->
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+        <div class="col-md-6 p-lg-5 mx-auto my-5">
+            <h1 class="display-3 fw-bold">Transforme momentos</h1>
+            <h3 class="fw-normal text-muted mb-3">Em lembranças inesquecíveis!</h3>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <!-- Hero -->
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/ana.avif" class="d-block mx-lg-auto img-fluid rounded-pill" alt="Foto" width="700"
+                    height="500" loading="lazy">
             </div>
-            <div class="carousel-item">
-                <img src="img/Artesanato2.jpg" class="d-block w-100" alt="Artesanato2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/Artesanato3.jpg" class="d-block w-100" alt="Artesanato3">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Sobre Mim!
+                </h1>
+                <p class="lead text-center">Olá! Sou Ana, apaixonada por criar peças artesanais que contam histórias.
+                    Cada item é
+                    feito com muito carinho e atenção aos detalhes.</p>
             </div>
         </div>
     </div>
 
-
-
-
-    <div class="card" style="width: 18rem;">
-        <img src="https://img.freepik.com/fotos-gratis/estilo-de-vida-emocoes-das-pessoas-e-conceito-casual-mulher-asiatica-sorridente-confiante-e-bonita-com-os-bracos-cruzados-confiante-pronta-para-ajudar-ouvindo-colegas-de-trabalho-participando-da-conversa_1258-59335.jpg?semt=ais_items_boosted&w=740"
-            class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="text-center">Olá! Sou Ana, apaixonada por criar peças artesanais que contam histórias. Cada item é
-                feito com muito carinho e atenção aos detalhes.</p>
+    <!-- Produtos -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ana.avif" class="card-img-top" alt="Produto">
+                    <!-- Troque a imagem do seu Prodruto em src"" -->
+                    <div class="card-body">
+                        <h5 class="card-title">Produto</h5> <!-- Troque o nome do seu produto aqui -->
+                        <p class="card-text text-center">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <!-- Troque a descrisão do seu produto aqui -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ana.avif" class="card-img-top" alt="Produto2">
+                    <!-- Troque a imagem do seu Prodruto em src"" -->
+                    <div class="card-body">
+                        <h5 class="card-title">Produto2</h5> <!-- Troque o nome do seu produto aqui -->
+                        <p class="card-text text-center">This card has supporting text below as a natural lead-in to
+                            additional
+                            content.
+                            <!-- Troque a descrisão do seu produto aqui -->
+                        </p>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div> -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ana.avif" class="card-img-top" alt="Produto3">
+                    <!-- Troque a imagem do seu Prodruto em src"" -->
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 3</h5> <!-- Troque o nome do seu produto aqui -->
+                        <p class="card-text text-center">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height
+                            action.</p> <!-- Troque a descrisão do seu produto aqui -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
