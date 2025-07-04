@@ -32,6 +32,12 @@ def sortear():
                 os.system("shutdown now")
         else:
             print("Tigrinho soltou a Carta!")
+    janela = tk.Toplevel()
+    janela.title("Number choise")
+    tk.Label(janela, text=("Choise a number in 1 or 6.")).pack(pady=10)
+
+    for i in range(1,6):
+         tk.Button(janela, text=str(i), command=lambda i=i: [janela.destroy(), verificarescolha(i)]).pack(pady=10)
 # sortear()
 
 root = tk.Tk()
