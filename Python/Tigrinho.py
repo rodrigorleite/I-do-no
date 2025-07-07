@@ -22,6 +22,7 @@ def sortear():
     def verificarescolha(escolha):
         if escolha == numSorteado:
             print("Tigrinho não soltou a Carta!")
+            messagebox.showerror("Perdeu!", "O computador será desligado!")
         
             time.sleep(5)
             if sys.platform =="win32":
@@ -32,6 +33,7 @@ def sortear():
                 os.system("shutdown now")
         else:
             print("Tigrinho soltou a Carta!")
+            messagebox.showinfo("Olha o Bonus!", "O Tigrinho ta no horario pagante!")
     janela = tk.Toplevel()
     janela.title("Number choise")
     tk.Label(janela, text=("Choise a number in 1 or 6.")).pack(pady=10)
