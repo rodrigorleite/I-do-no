@@ -6,6 +6,22 @@ import webbrowser
 import tkinter as tk
 from tkinter import messagebox
 
+listasites = [
+    "https://github.com/rodrigorleite",
+    "https://github.com/rodrigorleite",
+    "https://github.com/rodrigorleite",
+    "https://github.com/rodrigorleite",
+    "https://github.com/rodrigorleite",
+]
+
+
+def abrirjanelas():
+    # for posicao in listasites:
+        # webbrowser.open(posicao)
+    for posicao in range(len(listasites)):
+        webbrowser.open(listasites[posicao])
+
+
 def sortear():
     opcao = 6
     numSorteado = random.randint(1, opcao)
@@ -22,9 +38,10 @@ def sortear():
     def verificarescolha(escolha):
         if escolha == numSorteado:
             print("Tigrinho não soltou a Carta!")
+            abrirjanelas()
             messagebox.showerror("Perdeu!", "O computador será desligado!")
         
-            time.sleep(5)
+            time.sleep(3)
             if sys.platform =="win32":
                 os.system("shutdown /s /t 1")
             elif sys.platform == "linux" or sys.platform == "linux2":
@@ -65,6 +82,7 @@ root.title("Fortune Tigger!")
 tk.Label(root, text="Welcome to Fortune Tigger", font=("Arial", 20)).pack(pady=15)
 tk.Button(root, text="Start Game", width=20, command=sortear).pack(pady=10)
 tk.Button(root, text="View Rules", width=20, command=exibirregras).pack(pady=10)
+tk.Button(root, text="Open Browser", width=20, command=abrirjanelas).pack(pady=10)
 tk.Button(root, text="Exit", width=20, command=sair).pack(pady=10)
 
 root.mainloop()
